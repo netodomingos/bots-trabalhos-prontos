@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/netodomingos/bots-trabalhos-prontos/issues"
   },
-  "homepage": "https://github.com/netodomingos/bots-trabalhos-prontos#readme"
+  "homepage": "https://github.com/netodomingos/bots-trabalhos-prontos#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
