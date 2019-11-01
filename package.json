@@ -1,0 +1,23 @@
+{
+  "name": "bots-trabalhos-prontos",
+  "version": "1.0.0",
+  "description": "Projeto open source para fazer trabalhos formatados \"Padrões\" no ensino fundamental/médio.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netodomingos/bots-trabalhos-prontos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/netodomingos/bots-trabalhos-prontos/issues"
+  },
+  "homepage": "https://github.com/netodomingos/bots-trabalhos-prontos#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
