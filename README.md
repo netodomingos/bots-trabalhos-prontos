@@ -21,5 +21,6 @@ Com o console aberto, use o seguinte comando:
 ```JS
 node index.js
 ```
+![Capturar](https://user-images.githubusercontent.com/49910898/68077142-67856900-fd9d-11e9-86ff-0fda9d73080a.PNG)
 
 Com isso o projeto irá iniciar, após isso é só desfrutar!
