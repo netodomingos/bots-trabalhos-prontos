@@ -10,14 +10,14 @@ function userInput(content) {
     }
     function askAndReturnPrefix() {
         const prefixes = ['Who is', 'What is', 'The History of']
-        const selectedPrefixIndex = readLine.keyInSelect(prefixes, 'Escolha uma opcao: ')
+        const selectedPrefixIndex = readLine.keyInSelect(prefixes, 'Choose a prefix: ')
         const selectedPrefixText = prefixes[selectedPrefixIndex]
 
         return selectedPrefixText
     }
     function askAndReturnLanguage() {
-        const language = ['pt', 'en']
-        const selectedLangIndex = readLine.keyInSelect(language, 'Escolha uma linguagem')
+        const language = ['pt', 'en', 'jp', 'fr']
+        const selectedLangIndex = readLine.keyInSelect(language, 'Choose a Language: ')
         const selectedLangText = language[selectedLangIndex]
 
         return selectedLangText
