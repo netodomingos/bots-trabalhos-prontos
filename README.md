@@ -11,6 +11,8 @@ Antes de tudo é necessário baixar-mos as dependências de desenvolvimento.
 ``` js
 npm i
 ```
+![Capturar](https://user-images.githubusercontent.com/49910898/68077105-ceeee900-fd9c-11e9-8793-e2f85e85cc97.PNG)
+
 
 Com isso o projeto funcionará sem nenhum problema!  
 
