@@ -59,13 +59,15 @@ async function robot(content) {
             })
         })
     }
-    function creatFile(content){
+    function creatFile(content) {
         const file = `${content.prefix} ${content.searchTerm}.txt`
         const data = content.sourceContentSanitized
 
-        fs.writeFile(file, data, function(err){
-            if(err) throw err
-            console.log('ok')
+        fs.writeFile(file, data, function (err) {
+            if (err) throw err
+            console.log('Seu arquivo foi criado com sucesso!')
         })
     }
 }
+
+module.exports = robot
