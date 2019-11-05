@@ -1,11 +1,14 @@
 const algorithmia = require('algorithmia')
 const algorithmiaApiKey = require('../credentials/algorithmia.json').apiKey
 const sentenceBoundaryDetection = require('sbd')
+const fs = require('fs')
+const userInput = require('./user-input')
 
 async function robot(content) {
     await fetchContentFromWikipedia(content)
     sanitizedContent(content)
     breakContentIntoSentences(content)
+    creatFile(content)
 
     async function fetchContentFromWikipedia(content) {
         const algorithmiaAuthenticated = algorithmia(algorithmiaApiKey)
@@ -56,5 +59,13 @@ async function robot(content) {
             })
         })
     }
+    function creatFile(content){
+        const file = `${content.prefix} ${content.searchTerm}.txt`
+        const data = content.sourceContentSanitized
+
+        fs.writeFile(file, data, function(err){
+            if(err) throw err
+            console.log('ok')
+        })
+    }
 }
-module.exports = robot
